@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppleSignInDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIU-ck-JZc">
+                                <rect key="frame" x="50" y="261.5" width="220" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-Qy-zTO">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="Apple SignIn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnAppleSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cg3-hL-oG0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2tN-vX-0VF"/>
+                                    <constraint firstItem="Z8i-Qy-zTO" firstAttribute="top" secondItem="mIU-ck-JZc" secondAttribute="top" id="CIb-5a-UZq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z8i-Qy-zTO" secondAttribute="trailing" id="QE7-ak-Giw"/>
+                                    <constraint firstItem="Z8i-Qy-zTO" firstAttribute="leading" secondItem="mIU-ck-JZc" secondAttribute="leading" id="eww-Xt-30e"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z8i-Qy-zTO" secondAttribute="bottom" id="q6x-lU-CY8"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconApple" translatesAutoresizingMaskIntoConstraints="NO" id="suB-9i-NFi">
+                                <rect key="frame" x="110" y="71.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TGR-Kl-Qs4"/>
+                                    <constraint firstAttribute="height" constant="100" id="uvR-oV-Rrh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mIU-ck-JZc" secondAttribute="trailing" constant="50" id="0iA-J2-DHJ"/>
+                            <constraint firstItem="mIU-ck-JZc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6v7-n0-CVc"/>
+                            <constraint firstItem="suB-9i-NFi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mfm-gM-fB8"/>
+                            <constraint firstItem="mIU-ck-JZc" firstAttribute="top" secondItem="suB-9i-NFi" secondAttribute="bottom" constant="90" id="cn8-pY-c6b"/>
+                            <constraint firstItem="mIU-ck-JZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zal-mw-p45"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAppleSignIn" destination="Z8i-Qy-zTO" id="2mK-tH-bvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="70.774647887323951"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconApple" width="151" height="151"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
